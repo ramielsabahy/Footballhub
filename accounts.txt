@@ -1,0 +1,6 @@
+Facebook
+ - App ID
+   139365816689113
+ - App Secret
+   13262ff04318e41cc8506d365ff83f7f
+

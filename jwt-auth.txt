@@ -1,0 +1,100 @@
+composer require tymon/jwt-auth
+
+Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+
+php artisan vendor:publish
+php artisan
+php artisan jwt:generate
+
+.env
+JWT_SECRET=our_token
+
+// Register the authentication middleware in Kernel.php
+
+'jwt.auth' => \Tymon\JWTAuth\Middleware\GetUserFromToken::class
+
+// using the authentication middleware
+->middleware('jwt.auth');
+
+// authentication (to get the token)
+
+Route::post('/authenticate', [
+	'uses' => 'ApiAuthController@authenticate'
+]);
+
+php artisan make:controller ApiAuthController
+
+public function authenticate() {
+	// get user data
+	$credentials = request()->only('email', 'password');
+
+	// check if user credentials are correct
+	try {
+		// using the facade
+		$token = \JWTAuth::attempt($credentials);
+
+		if (!$token) {
+		// unauthorized access
+		return response->json(['error' => 'invalid_credentials'], 401);
+		}
+	}catch(\Tymon\JWTAuth\Exceptions\JWTException $e) {
+		// internal server error
+		return response->json(['error' => 'something_went_wrong'], 500);
+	}
+
+	// generate a token
+	// successful
+	return response()->json(['token' => $token], 200);
+}
+
+php artisan migrate
+php artisan tinker
+factory('App\User', #users)->create();
+
+// user registration
+Route::post('/register', [
+	'uses' => 'ApiAuthController@register'
+]);
+
+public function register() {
+	// create user
+	$email = request()->email;
+	$name = request()->name;
+	$password = request()->password;
+
+	$user = User::create([
+		'name' => $name,
+		'email' => $email,
+		'password' => bcrypt($password)
+	]);
+
+	// generate token
+	$token = JWTAuth::fromUser($user);
+
+	// return response
+	return response()->json([
+		'token' => $token
+	], 200);
+}
+
+// Authorization Header
+Authorization Bearer token
+
+// How to know the user of the token
+Route::get('/user', function (Request $request) {
+	$token = JWTAuth::getToken();
+	$user = JWTAuth::toUser($token);
+	return $user;
+})->middleware('jwt.auth');
+
+try {
+	Model::findOrFail($id);
+} catch(\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+	return response()->json([
+		'error' => $e->getMessage()
+	]);
+}
+
+// success
+return response()->json(['status' => true], 200);

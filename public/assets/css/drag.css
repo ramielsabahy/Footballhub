@@ -1,0 +1,497 @@
+
+
+/* Label styles: style as needed */
+label {
+  display:block;
+  margin: 2em 1em .25em .75em;
+  font-size: 1.25em;
+  margin-left: 10%;
+  color:#333;
+}
+
+/* Container used for styling the custom select, the buttom class adds the bg gradient, corners, etc. */
+.dropdown {
+  position: relative;
+  display:block;
+  width: 60%;
+  margin-top:0.5em;
+  margin-left: 10%;
+  padding:0;
+}
+
+/* This is the native select, we're making everything the text invisible so we can see the button styles in the wrapper */
+.dropdown select {
+  width:100%;
+  margin:0;
+  background:none;
+  border: 1px solid transparent;
+  outline: none;
+  /* Prefixed box-sizing rules necessary for older browsers */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Remove select styling */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Magic font size number to prevent iOS text zoom */
+  font-size:1.25em;
+  /* General select styles: change as needed */
+  /* font-weight: bold; */
+  color: #444;
+  padding: .6em 1.9em .5em .8em;
+  line-height:1.3;
+}
+.dropdown select,
+label {
+  font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande","Trebuchet Ms", sans-serif;
+}
+
+/* Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select */
+
+.dropdown::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  right: 1em;
+  margin-top:-4px;
+  z-index: 2;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpolygon fill='rgb(102,102,102)' points='8,12 0,0 16,0'/%3E%3C/svg%3E") 0 0 no-repeat;  
+  /* These hacks make the select behind the arrow clickable in some browsers */
+  pointer-events:none;
+}
+
+/* This hides native dropdown button arrow in IE 10/11+ so it will have the custom appearance, IE 9 and earlier get a native select */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .dropdown select::-ms-expand {
+    display: none;
+  }
+  /* Removes the odd blue bg color behind the text in IE 10/11 and sets the text to match the focus style text */
+  select:focus::-ms-value {
+    background: transparent;
+    color: #222;
+  }
+}
+
+
+/* Firefox 7+ -- Will let us hide the arrow, but inconsistently (see FF 30 comment below). We've found the simplest way to hide the native styling in FF is to make the select bigger than its container. */
+/* The specific FF selector used below successfully overrides the previous rule that turns off the custom icon; other FF hacky selectors we tried, like `*>.dropdown::after`, did not undo the previous rule */
+
+/* Set overflow:hidden on the wrapper to clip the native select's arrow, this clips hte outline too so focus styles are less than ideal in FF */
+_::-moz-progress-bar, body:last-child .dropdown {
+  overflow: hidden;
+}
+/* Show only the custom icon */
+_::-moz-progress-bar, body:last-child .dropdown:after {
+  display: block;
+}
+_::-moz-progress-bar, body:last-child .dropdown select {
+  /* increase padding to make room for menu icon */
+  padding-right: 1.9em;
+  /* `window` appearance with these text-indent and text-overflow values will hide the arrow FF up to v30 */
+  -moz-appearance: window;
+  text-indent: 0.01px;
+  text-overflow: "";
+  /* for FF 30+ on Windows 8, we need to make the select a bit longer to hide the native arrow */
+  width: 110%;
+}
+
+/* At first we tried the following rule to hide the native select arrow in Firefox 30+ in Windows 8, but we'd rather simplify the CSS and widen the select for all versions of FF since this is a recurring issue in that browser */
+/* @supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal) {
+.dropdown select { width:110%; }
+}   */
+
+
+/* Firefox 7+ focus style - This works around the issue that -moz-appearance: window kills the normal select focus. Using semi-opaque because outline doesn't handle rounded corners */
+_::-moz-progress-bar, body:last-child .dropdown select:focus {
+  outline: 2px solid rgba(180,222,250, .7);
+}
+
+
+/* Opera - Pre-Blink nix the custom arrow, go with a native select button */
+x:-o-prefocus, .dropdown::after {
+  display:none;
+}
+
+
+/* Hover style */
+.dropdown:hover {
+  border:1px solid #888;
+}
+
+/* Focus style */
+select:focus {
+  outline:none;
+  box-shadow: 0 0 1px 3px rgba(180,222,250, 1);
+  background-color:transparent;
+  color: #222;
+  border:1px solid #aaa;
+}
+
+
+/* Firefox focus has odd artifacts around the text, this kills that */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+option {
+  font-weight:normal;
+}
+
+
+/* These are just demo button-y styles, style as you like */
+.button {
+  border: 1px solid #bbb;
+  border-radius: .3em;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+  background: #f3f3f3; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+}
+.colors {
+  padding: 2em;
+  color: #fff;
+  display: none;
+}
+
+
+body {
+    padding-top: 20px;
+    color: #75736f;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+a {
+    color: #75736f;
+}
+
+a:focus,
+a:hover,
+a:visited,
+a:active,
+a:link {
+    text-decoration: none !important;
+    color: #75736f;
+}
+
+ul.neo-nav {
+    border: 2px solid #75736f;
+    display: inline-block;
+    -moz-padding-start: 0px;
+    -webkit-padding-start: 0px;
+    padding-start: 0px;
+    border-radius: 5px;
+}
+
+ul.neo-nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+ul.neo-nav li a {
+    color: #75736f;
+    padding: 10px 30px;
+    font-weight: bold;
+    display: block;
+}
+
+ul.neo-nav li.active a {
+    color: white;
+}
+
+ul.neo-nav li:not(:first-child) {
+    border-left: 2px solid #75736f;
+}
+
+ul.neo-nav li.active {
+    background-color: #75736f;
+    color: white;
+}
+
+ul.neo-nav li a:hover,
+ul.neo-nav li a:visited,
+ul.neo-nav li a:active,
+ul.neo-nav li a:link {
+    text-decoration: none;
+}
+
+#main-content {
+    background-color: whitesmoke;
+    border-left: 1px solid #ddd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+#sideBar {
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index: 2;
+}
+
+.tab-container {
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+
+#addFieldTab {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#fieldSettingTab {
+    padding: 20px;
+}
+
+#stdFields {}
+
+#formBuilderContent {
+    background-color: white;
+    padding: 20px;
+    height: 190px;
+}
+
+.dragElement-wrapper {
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.dragElement-wrapper .drag-element {
+    display: block;
+    width: 105%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dragElement-wrapper .drag-element i {
+    margin-right: 5px;
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+#chkBoxZone {
+    margin-top: 15px;
+}
+
+.input-as-label {
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.active-field {
+    background-color: #f1fafc;
+}
+
+.form-group {
+    padding: 10px;
+    position: relative;
+}
+
+.form-group i.remove-ico {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.pale {
+    opacity: 50%;
+}
+
+.sortable-formbuilder,
+.sortable-stdFields {
+    padding-left: 0px;
+    -moz-padding-start: 0px;
+    -webkit-padding-start: 0px;
+    -khtml-padding-start: 0px;
+    -o-padding-start: 0px;
+    padding-start: 0px;
+    list-style: none;
+    min-height: 40px;
+}
+
+.drop-to-add {
+    height: 40px;
+}
+
+a[data-toggle="collapse"] i.fa-plus-square-o {
+    display: none;
+}
+
+a[data-toggle="collapse"] i.fa-minus-square-o {
+    display: inline-block;
+}
+
+a[data-toggle="collapse"].collapsed i.fa-plus-square-o {
+    display: inline-block;
+}
+
+a[data-toggle="collapse"].collapsed i.fa-minus-square-o {
+    display: none;
+}
+
+.orange-txt {
+    color: orange;
+}
+#sidebar-tab-content{
+    overflow-y: scroll;
+}
+.drag {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin-right: 10px;
+}
+#boxB{
+  margin-right: 0px;
+}
+#boxB,#boxA{
+  display: inline-block;
+  width: 120px;
+  height: 45px
+  /*float: left;*/
+}
+#big,#big1,#big2,#big3,#big4,#big5,#big6,#big7,#big8 {
+  display: inline-block;
+  width: 315px;
+  height: 180px;
+}
+section {
+width: 415px;
+  height: 200px;
+  background:gray;
+  margin: 20px auto;
+}
+.tab-pane{
+  height: 250px;
+}
+#main-content{
+  height: 635px;
+}
+#search{
+  border-radius: 6px;
+  width: 80%;
+  margin-left: 10%;
+  outline: none;
+  padding: 5px;
+  padding-left: 15px
+}
+.sortable-formbuilder li:nth-child(2) div {
+  margin-left: 80px
+}
+.sortable-formbuilder li:nth-child(4) div{
+  margin-left: 80px
+}
+#dd{
+  margin-top: 0;
+  color: black;
+}
+button {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #1ECD97;
+  color: #1ECD97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+button:hover {
+  color: white;
+  background: #1ECD97;
+}
+button:active {
+  letter-spacing: 2px;
+}
+button:after {
+  content: "SUBMIT";
+}
+
+.onclic {
+  width: 40px;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ECD97;
+  -webkit-animation: rotating 2s 0.25s linear infinite;
+          animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content: "";
+}
+.onclic:hover {
+  color: #1ECD97;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ECD97;
+}
+.validate:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.row8{
+  margin-top: -80px;
+}

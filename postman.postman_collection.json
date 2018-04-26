@@ -1,0 +1,2451 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Football Hub Server",
+		"_postman_id": "1851c440-53d8-a5cf-a685-7c9103c2e2e0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FriendlyMatches",
+			"description": "",
+			"item": [
+				{
+					"name": "createFriendlyMatch",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/createFriendlyMatch",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getPlayerFriendlyInvitations",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/getPlayerFriendlyInvitations",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEwLCJpc3MiOiJodHRwOi8vZm9vdGJhbGxodWIubGFyYXZlbC5jb20vYXBpL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUxMzQ3MzQ1MSwiZXhwIjoxNTE0OTg1NDUxLCJuYmYiOjE1MTM0NzM0NTEsImp0aSI6IkZPeFZYY2xQcDFMVHFvSlkifQ.nJ80erdxBiF4JPW5w0xA8oZWfYFQW-rwYy2tGF1PqGU",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getPlayerFriendlyMatches",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/getPlayerFriendlyMatches",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getPlayerJoinedFriendlyMatches",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/getPlayerJoinedFriendlyMatches",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getFriendlyMatchById",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/getFriendlyMatchById",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "friendlyMembersCount",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/friendlyMembersCount",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "acceptFriendlyMatchInvitation",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/acceptFriendlyMatchInvitation",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjI2LCJpc3MiOiJodHRwOi8vZm9vdGJhbGxodWIubGFyYXZlbC5jb20vYXBpL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUxMzQ3NjU1MiwiZXhwIjoxNTE0OTg4NTUyLCJuYmYiOjE1MTM0NzY1NTIsImp0aSI6IkdXaE9qSnFrQ1JVT1R2UmYifQ.zLObDW72EuT-N4fZ0w92S7H6m3UFiAw2UTPk67NBpHg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "rejectFriendlyMatchInvitation",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/rejectFriendlyMatchInvitation",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjExLCJpc3MiOiJodHRwOi8vZm9vdGJhbGxodWIubGFyYXZlbC5jb20vYXBpL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUxMzQ3NDg3NCwiZXhwIjoxNTE0OTg2ODc0LCJuYmYiOjE1MTM0NzQ4NzQsImp0aSI6InNFN3pYTTJEbXVYZ1JJNDgifQ.QDz3T7sK2A1tQa9tiMqen7KuVHYdnWwspjQt9SqbYpY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "cancelFriendlyMatchInvitation",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/cancelFriendlyMatchInvitation",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "kickOffFriendlyMatchMember",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/kickOffFriendlyMatchMember",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "leaveFriendlyMatch",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/leaveFriendlyMatch",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIzLCJpc3MiOiJodHRwOi8vZm9vdGJhbGxodWIubGFyYXZlbC5jb20vYXBpL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUxMzQ3NTU2MywiZXhwIjoxNTE0OTg3NTYzLCJuYmYiOjE1MTM0NzU1NjMsImp0aSI6IkhUWWJPODlwRVpmTE1EenoifQ.d_ZZ10M7_UBFcIo5n1gFMlf4csWuyGCTElWvm6nSEto",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "invitePlayerToFriendlyMatch",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/invitePlayerToFriendlyMatch",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "CheckFriendlyMatchCanStart",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/CheckFriendlyMatchCanStart",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "startFriendlyMatch",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/startFriendlyMatch",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "flushFriendlyMatchResults",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/flushFriendlyMatchResults",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDcyNzg5LCJleHAiOjE1MTQ5ODQ3ODksIm5iZiI6MTUxMzQ3Mjc4OSwianRpIjoiVlQ2amg2akpsM1JHNzB1TCJ9.MhCQnyQvmFMT_Bws3bZVQeJ6W7BcZYOm5hnhtHtmjcQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getPlayerFriendlyScore",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/getPlayerFriendlyScore",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDgwODc3LCJleHAiOjE1MTQ5OTI4NzcsIm5iZiI6MTUxMzQ4MDg3NywianRpIjoiem1PWHR6MTlrZWRwbDlGZyJ9.r7KufDiYq11whyWd6l_HX0hUhN-ax-fOoGRk_JBLNQA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "endFriendlyMatch",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/endFriendlyMatch",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDgwODc3LCJleHAiOjE1MTQ5OTI4NzcsIm5iZiI6MTUxMzQ4MDg3NywianRpIjoiem1PWHR6MTlrZWRwbDlGZyJ9.r7KufDiYq11whyWd6l_HX0hUhN-ax-fOoGRk_JBLNQA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "deleteFriendlyMatch",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/friendly/deleteFriendlyMatch",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDgwODc3LCJleHAiOjE1MTQ5OTI4NzcsIm5iZiI6MTUxMzQ4MDg3NywianRpIjoiem1PWHR6MTlrZWRwbDlGZyJ9.r7KufDiYq11whyWd6l_HX0hUhN-ax-fOoGRk_JBLNQA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invitations",
+			"description": "",
+			"item": [
+				{
+					"name": "InviteByPhone",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/inviteByPhone",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDEwMDUzLCJleHAiOjE1MTQ5MjIwNTMsIm5iZiI6MTUxMzQxMDA1MywianRpIjoiQTZOVThvNUJmTkdtZk5adyJ9.J6qYCz3eRVH-ZKzzxYOMaSpxsxtn67baMQf1exfk_Ps",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "InviteById",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/inviteById",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDUzNDA1LCJleHAiOjE1MTQ5NjU0MDUsIm5iZiI6MTUxMzQ1MzQwNSwianRpIjoiWk90U2Q0a3NwY3pCcHV0cCJ9.ZhTh2RXhIFSi4cDTPbc1rJF6i5jH-tIjbV2Nku6ASy8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "checkPhoneInvitations",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/checkPhoneInvitations",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjI2LCJpc3MiOiJodHRwOi8vZm9vdGJhbGxodWIubGFyYXZlbC5jb20vYXBpL3BsYXllcnMvcmVnaXN0ZXIiLCJpYXQiOjE1MTM0NTIwMDgsImV4cCI6MTUxNDk2NDAwOCwibmJmIjoxNTEzNDUyMDA4LCJqdGkiOiJNMzZNWWUzN3BicTB0UXNwIn0.y_yln8laszEKKDQL0iwLfQ1_NF_iuGQOPuqFZZ95zLo",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "allTeamInvitations",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/allTeamInvitations",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDUyMjI1LCJleHAiOjE1MTQ5NjQyMjUsIm5iZiI6MTUxMzQ1MjIyNSwianRpIjoiT0hQM2g5ZFdGREN5bjJ0RSJ9.EN4m9EsVCAh-PYhFHY8kuTG3O8JVbSbNY7CJh0FQJ0Y",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "allPlayerInvitations",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/allPlayerInvitations",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjI3LCJpc3MiOiJodHRwOi8vZm9vdGJhbGxodWIubGFyYXZlbC5jb20vYXBpL3BsYXllcnMvcmVnaXN0ZXIiLCJpYXQiOjE1MTM0NTI5NTMsImV4cCI6MTUxNDk2NDk1MywibmJmIjoxNTEzNDUyOTUzLCJqdGkiOiJYZU5HdGZjdlVqU0JPVGp4In0.Bcyfh2Yb3kKZ2R7Nnrt_SjXxIyCu3OodjgoZc33TTFg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "acceptInvitation",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/acceptInvitation",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEyLCJpc3MiOiJodHRwOi8vZm9vdGJhbGxodWIubGFyYXZlbC5jb20vYXBpL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUxMzQ1NDIyOSwiZXhwIjoxNTE0OTY2MjI5LCJuYmYiOjE1MTM0NTQyMjksImp0aSI6IkdXZklieGR5Y1V2eHBsbTgifQ.OFibkyPDIbuZ3V5PawJkK29yXpqsT83ifl7x5I-NWac",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "rejectInvitation",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/rejectInvitation",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjExLCJpc3MiOiJodHRwOi8vZm9vdGJhbGxodWIubGFyYXZlbC5jb20vYXBpL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUxMzQ1MzM0MywiZXhwIjoxNTE0OTY1MzQzLCJuYmYiOjE1MTM0NTMzNDMsImp0aSI6IldQaGROS2JvN2Zod2lXMDUifQ.DAt4XIl3nbcWw8M4gA_eSnN4eQ519PZlQ6X_Gi-MSwA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "cancelInvitation",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/cancelInvitation",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDUzNDA1LCJleHAiOjE1MTQ5NjU0MDUsIm5iZiI6MTUxMzQ1MzQwNSwianRpIjoiWk90U2Q0a3NwY3pCcHV0cCJ9.ZhTh2RXhIFSi4cDTPbc1rJF6i5jH-tIjbV2Nku6ASy8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "clearPhoneInvitations",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/clearPhoneInvitations",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDUzNDA1LCJleHAiOjE1MTQ5NjU0MDUsIm5iZiI6MTUxMzQ1MzQwNSwianRpIjoiWk90U2Q0a3NwY3pCcHV0cCJ9.ZhTh2RXhIFSi4cDTPbc1rJF6i5jH-tIjbV2Nku6ASy8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "clearTeamInvitations",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/clearTeamInvitations",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDUzNDA1LCJleHAiOjE1MTQ5NjU0MDUsIm5iZiI6MTUxMzQ1MzQwNSwianRpIjoiWk90U2Q0a3NwY3pCcHV0cCJ9.ZhTh2RXhIFSi4cDTPbc1rJF6i5jH-tIjbV2Nku6ASy8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "leaveTeam",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/leaveTeam",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEyLCJpc3MiOiJodHRwOi8vZm9vdGJhbGxodWIubGFyYXZlbC5jb20vYXBpL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUxMzQ1NDIyOSwiZXhwIjoxNTE0OTY2MjI5LCJuYmYiOjE1MTM0NTQyMjksImp0aSI6IkdXZklieGR5Y1V2eHBsbTgifQ.OFibkyPDIbuZ3V5PawJkK29yXpqsT83ifl7x5I-NWac",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "playerKickOff",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/invitations/playerKickOff",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDU0NTMxLCJleHAiOjE1MTQ5NjY1MzEsIm5iZiI6MTUxMzQ1NDUzMSwianRpIjoiQURBOFBSQnhQRWlRWnpZRiJ9.Ueuxm26FPMrkn8BTj_qCf9Mmp3FA09xh94uq4kjBIOs",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teams",
+			"description": "",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/teams/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEyNDg4MzIyLCJleHAiOjE1MTQwMDAzMjIsIm5iZiI6MTUxMjQ4ODMyMiwianRpIjoieGw4VWxjSkFhM1RXTmU0dyJ9.29r3f-NxudYKmb2VDsCKsjzjCJDpvaAjxhoFA7k0ds8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"third team\",\n\t\"user_id\": 3\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/teams/edit",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEyNDg4MzIyLCJleHAiOjE1MTQwMDAzMjIsIm5iZiI6MTUxMjQ4ODMyMiwianRpIjoieGw4VWxjSkFhM1RXTmU0dyJ9.29r3f-NxudYKmb2VDsCKsjzjCJDpvaAjxhoFA7k0ds8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1,\n\t\"name\": \"first team\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/teams/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEyLCJpc3MiOiJodHRwOi8vMTUxLjIzNi4yMjIuMjUyL2h1Yi9wdWJsaWMvYXBpL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUxMjQ5MDAzMywiZXhwIjoxNTE0MDAyMDMzLCJuYmYiOjE1MTI0OTAwMzMsImp0aSI6ImVuUXpyc0xWMWdXWW9kVGkifQ.EzXwbtCwAyQpq7YGr4ElM8ASx8_ZX67GAIzyGgRUMW8",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/teams/destroy",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEyNDkwMTU5LCJleHAiOjE1MTQwMDIxNTksIm5iZiI6MTUxMjQ5MDE1OSwianRpIjoiQ2F3R2dCd3BDR1JENmJWMyJ9.WoVz7suKiLuCH7brUtXMG4cXne9Ihw84qeJAntmXCIM",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 3\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Regenerate Team Code",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/teams/regenerateTeamCode",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEyNDkwMTU5LCJleHAiOjE1MTQwMDIxNTksIm5iZiI6MTUxMjQ5MDE1OSwianRpIjoiQ2F3R2dCd3BDR1JENmJWMyJ9.WoVz7suKiLuCH7brUtXMG4cXne9Ihw84qeJAntmXCIM",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Set Team Code",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/teams/setTeamCode",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEyNDkwMTU5LCJleHAiOjE1MTQwMDIxNTksIm5iZiI6MTUxMjQ5MDE1OSwianRpIjoiQ2F3R2dCd3BDR1JENmJWMyJ9.WoVz7suKiLuCH7brUtXMG4cXne9Ihw84qeJAntmXCIM",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1,\n\t\"code\": \"Cod3R\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getTeamById",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/teams/getTeamById",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getTeamByCode",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/teams/getTeamByCode",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"code\": \"Cod3R\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getTeamsByName",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/teams/getTeamsByName",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"first team\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Terms and Conditions",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Terms and Conditions",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/termsandconditions",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Social Login Check",
+			"description": "",
+			"item": [
+				{
+					"name": "CheckUserExist",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/checkSocialUserExist",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"mohamed_alansary@hub.com\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Likes",
+			"description": "",
+			"item": [
+				{
+					"name": "Like",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/likes/like",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5ODAwNTAxLCJleHAiOjE1MDk4MDQxMDEsIm5iZiI6MTUwOTgwMDUwMSwianRpIjoiejhNZG5MWlExTm4zSmJQYyJ9.IMRQ_C5FZ06aMmFGDKnZiQPai9PExvrj8n8jXpzb-rg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 11\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "unLike",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/likes/unlike",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5ODAwNTc4LCJleHAiOjE1MDk4MDQxNzgsIm5iZiI6MTUwOTgwMDU3OCwianRpIjoiZVlOYWZmQWsxYVc5VHJkaiJ9.DlH2DMiDN-QBRhBuTA5VdKxydb0TpI0awU04em4WO2s",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 9\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Count Feed Likes",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/likes/countLikes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5ODAwNTc4LCJleHAiOjE1MDk4MDQxNzgsIm5iZiI6MTUwOTgwMDU3OCwianRpIjoiZVlOYWZmQWsxYVc5VHJkaiJ9.DlH2DMiDN-QBRhBuTA5VdKxydb0TpI0awU04em4WO2s",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 11\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "User Likes",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/likes/userLikes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5ODAwNTc4LCJleHAiOjE1MDk4MDQxNzgsIm5iZiI6MTUwOTgwMDU3OCwianRpIjoiZVlOYWZmQWsxYVc5VHJkaiJ9.DlH2DMiDN-QBRhBuTA5VdKxydb0TpI0awU04em4WO2s",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 9\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Feed Liked By",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/likes/likedBy",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5ODc4NDk4LCJleHAiOjE1MDk4ODIwOTgsIm5iZiI6MTUwOTg3ODQ5OCwianRpIjoia3FaWXVxMEN3cE01TG9vSCJ9.FQ9dJJ3T7J1F-DJrnJ8vogfLcjlL9U_fW3tRLaawk88",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 11\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"description": "",
+			"item": [
+				{
+					"name": "Feed Comments",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/comments/feed_comments",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk5NTIxLCJleHAiOjE1MDk4MDMxMjEsIm5iZiI6MTUwOTc5OTUyMSwianRpIjoieTBqSFd0eENaNkZmYXhaSyJ9.GDwYBfu859UgZeff6yFf2muZYhm5tIl_guTOVpuyHbE",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 9\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Comment",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/comments/comment",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk5OTI0LCJleHAiOjE1MDk4MDM1MjQsIm5iZiI6MTUwOTc5OTkyNCwianRpIjoicVcybVNrY25SaXBMTjNrRCJ9.ROw0tuVxRSMtfxdTi5cQZdb0vQWaoOEZu-eb2k1PtDQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"feed_id\": 11,\n\t\"comment\": \"Hay, this is my first comment on the fh feed as a player\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/comments/edit",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk5OTI0LCJleHAiOjE1MDk4MDM1MjQsIm5iZiI6MTUwOTc5OTkyNCwianRpIjoicVcybVNrY25SaXBMTjNrRCJ9.ROw0tuVxRSMtfxdTi5cQZdb0vQWaoOEZu-eb2k1PtDQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 6,\n\t\"comment\": \"modified comment\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/comments/destroy",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk5OTI0LCJleHAiOjE1MDk4MDM1MjQsIm5iZiI6MTUwOTc5OTkyNCwianRpIjoicVcybVNrY25SaXBMTjNrRCJ9.ROw0tuVxRSMtfxdTi5cQZdb0vQWaoOEZu-eb2k1PtDQ",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 6\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Football Hub Feeds",
+			"description": "",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/football_hub_feeds/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk4MzMxLCJleHAiOjE1MDk4MDE5MzEsIm5iZiI6MTUwOTc5ODMzMSwianRpIjoia1dvcnFMaUhSYW14c0VidyJ9.v4nzlQdSzmiFd6R9pTMMKgivNEsl417bLAwRoCh6zes",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"body\": \"first football hub feed\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create with thumbnail",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/football_hub_feeds/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk5MjYxLCJleHAiOjE1MDk4MDI4NjEsIm5iZiI6MTUwOTc5OTI2MSwianRpIjoiWDdVV1FtckkyM0dkZ0dORiJ9.XGBlgdwBPXo9xM0F9ToW1BG-pcLtkxLS0EA-U5LmOec",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"body\": \"Second football hub feed\",\n\t\"thumbnail\": \"data:image/gif;base64,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\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/football_hub_feeds/edit",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk5MjYxLCJleHAiOjE1MDk4MDI4NjEsIm5iZiI6MTUwOTc5OTI2MSwianRpIjoiWDdVV1FtckkyM0dkZ0dORiJ9.XGBlgdwBPXo9xM0F9ToW1BG-pcLtkxLS0EA-U5LmOec",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 10,\n\t\"body\": \"first fh edited\",\n\t\"thumbnail\": \"data:image/gif;base64,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\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/football_hub_feeds/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEwNTY5ODM3LCJleHAiOjE1MTIwODE4MzcsIm5iZiI6MTUxMDU2OTgzNywianRpIjoiVEJaV1poRXdvd2hEc01rMSJ9.1tC9inWKikUlvdbmqDi25YxZ4-5JS4tkayrdp3xfNE0",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/football_hub_feeds/get",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk5NTIxLCJleHAiOjE1MDk4MDMxMjEsIm5iZiI6MTUwOTc5OTUyMSwianRpIjoieTBqSFd0eENaNkZmYXhaSyJ9.GDwYBfu859UgZeff6yFf2muZYhm5tIl_guTOVpuyHbE",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 11\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/football_hub_feeds/destroy",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk5NTIxLCJleHAiOjE1MDk4MDMxMjEsIm5iZiI6MTUwOTc5OTUyMSwianRpIjoieTBqSFd0eENaNkZmYXhaSyJ9.GDwYBfu859UgZeff6yFf2muZYhm5tIl_guTOVpuyHbE",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 10\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "General Feeds",
+			"description": "",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/general_feeds/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEwMTUxNzIyLCJleHAiOjE1MTAxNTUzMjIsIm5iZiI6MTUxMDE1MTcyMiwianRpIjoiMEZnZTU3OEV4aXdmeTU2SiJ9.xksLYilE_8br73uC-hEHZD-7B_lGmMvW5fATPO_hsG0",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"body\": \"Its fields can be divided into a variety of theoretical and practical disciplines. Some fields, such as computational complexity theory (which explores the fundamental properties of computational and intractable problems), are highly abstract, while fields such as computer graphics emphasize real-world visual applications. Other fields still focus on challenges in implementing computation. For example, programming language theory considers various approaches to the description of computation, while the study of computer programming itself investigates various aspects of the use of programming language and complex systems. Human–computer interaction considers the challenges in making computers and computations useful, usable, and universally accessible to humans.\",\n\t\"thumbnail\": \"data:image/gif;base64,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\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create with thumbnail",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/general_feeds/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk5MDg2LCJleHAiOjE1MDk4MDI2ODYsIm5iZiI6MTUwOTc5OTA4NiwianRpIjoicGdrVksyeTR3T3hkYnNLZyJ9.NXr4aj18B4iccqHd3nU5HqD2qFJ8FPw0lDwTowzPRd8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"body\": \"Second general feed\",\n\t\"thumbnail\": \"data:image/gif;base64,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\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/general_feeds/edit",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk1NjI3LCJleHAiOjE1MDk3OTkyMjcsIm5iZiI6MTUwOTc5NTYyNywianRpIjoicG1ZOEJjZjgyU1JNN0s2USJ9.gOxRqtUQjePRqLZqRY43g8Q8XkxQu7EWJ-sMbGrU-80",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 7,\n\t\"body\": \"first general feed edited\",\n\t\"thumbnail\": \"data:image/gif;base64,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\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/general_feeds/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEzNDUwOTg5LCJleHAiOjE1MTQ5NjI5ODksIm5iZiI6MTUxMzQ1MDk4OSwianRpIjoiTTBTTG93aU4wQTZ1VnhwSCJ9.vUhN76f99KFBoIEDqEHzulXz4enPRad4QA3CnnEO04M",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/general_feeds/get",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjksImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk1NjI3LCJleHAiOjE1MDk3OTkyMjcsIm5iZiI6MTUwOTc5NTYyNywianRpIjoicG1ZOEJjZjgyU1JNN0s2USJ9.gOxRqtUQjePRqLZqRY43g8Q8XkxQu7EWJ-sMbGrU-80",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 7\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/general_feeds/destroy",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly9mb290YmFsbGh1Yi5sYXJhdmVsLmNvbS9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Nzk4MzMxLCJleHAiOjE1MDk4MDE5MzEsIm5iZiI6MTUwOTc5ODMzMSwianRpIjoia1dvcnFMaUhSYW14c0VidyJ9.v4nzlQdSzmiFd6R9pTMMKgivNEsl417bLAwRoCh6zes",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 7\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "User General Feeds",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/general_feeds/user_feeds",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5ODc4NDk4LCJleHAiOjE1MDk4ODIwOTgsIm5iZiI6MTUwOTg3ODQ5OCwianRpIjoia3FaWXVxMEN3cE01TG9vSCJ9.FQ9dJJ3T7J1F-DJrnJ8vogfLcjlL9U_fW3tRLaawk88",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 9\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"description": "",
+			"item": [
+				{
+					"name": "Authenticate",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/authenticate",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"first_player@hub.com\",\n\t\"password\": \"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5OTYyMDE5LCJleHAiOjE1MDk5NjU2MTksIm5iZiI6MTUwOTk2MjAxOSwianRpIjoiU0pQaUszakppeXdTTUx5SSJ9.3cbCzpQLhJZ9ZI7Auv_Wk_CdnNKXejjas646UgXbWZU",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"fullName\": \"Mohamed Alansary\",\n\t\"name\": \"alansary\",\n\t\"email\": \"mohamed_alansary2@hub.com\",\n\t\"password\": \"123456\",\n\t\"mobileNumber\": \"01200000000\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Players",
+			"description": "",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/players/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"fullName\": \"Fourth Player\",\n\t\"name\": \"fourthPlayer\",\n\t\"email\": \"fourth_player@hub.com\",\n\t\"password\": \"123456\",\n\t\"mobileNumber\": \"01130000000\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/players/edit",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Mjc4MjM4LCJleHAiOjE1MDkyODE4MzgsIm5iZiI6MTUwOTI3ODIzOCwianRpIjoiR1JhaEl0WG5jdzh1WDRrSiJ9.OCBCt77v5G5Hv2n3VZL2yrwOlb4nXn2506EHOOnsObk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"3\",\n\t\"fullName\": \"First Player Edited\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/players/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEwNjU4ODMzLCJleHAiOjE1MTIxNzA4MzMsIm5iZiI6MTUxMDY1ODgzMywianRpIjoiMjREYUR6Q0U0UWV5OGYzbyJ9.-iAdHv1NM1rKE2urHWeV4qpLFRHyR9pncXpZbNdtaT8",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/players/get",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEwNjU4ODMzLCJleHAiOjE1MTIxNzA4MzMsIm5iZiI6MTUxMDY1ODgzMywianRpIjoiMjREYUR6Q0U0UWV5OGYzbyJ9.-iAdHv1NM1rKE2urHWeV4qpLFRHyR9pncXpZbNdtaT8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"2\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/players/destroy",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Mjc4MjM4LCJleHAiOjE1MDkyODE4MzgsIm5iZiI6MTUwOTI3ODIzOCwianRpIjoiR1JhaEl0WG5jdzh1WDRrSiJ9.OCBCt77v5G5Hv2n3VZL2yrwOlb4nXn2506EHOOnsObk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"3\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Referees",
+			"description": "",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/referees/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"fullName\": \"First Referee\",\n\t\"name\": \"firstReferee\",\n\t\"email\": \"first_referee@hub.com\",\n\t\"password\": \"123456\",\n\t\"mobileNumber\": \"01300000000\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/referees/edit",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Mjc4MjM4LCJleHAiOjE1MDkyODE4MzgsIm5iZiI6MTUwOTI3ODIzOCwianRpIjoiR1JhaEl0WG5jdzh1WDRrSiJ9.OCBCt77v5G5Hv2n3VZL2yrwOlb4nXn2506EHOOnsObk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"4\",\n\t\"fullName\": \"First Referee Edited\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/referees/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEwNjU4ODMzLCJleHAiOjE1MTIxNzA4MzMsIm5iZiI6MTUxMDY1ODgzMywianRpIjoiMjREYUR6Q0U0UWV5OGYzbyJ9.-iAdHv1NM1rKE2urHWeV4qpLFRHyR9pncXpZbNdtaT8",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/referees/get",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEwNjU4ODMzLCJleHAiOjE1MTIxNzA4MzMsIm5iZiI6MTUxMDY1ODgzMywianRpIjoiMjREYUR6Q0U0UWV5OGYzbyJ9.-iAdHv1NM1rKE2urHWeV4qpLFRHyR9pncXpZbNdtaT8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"15\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/referees/destroy",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5Mjc4MjM4LCJleHAiOjE1MDkyODE4MzgsIm5iZiI6MTUwOTI3ODIzOCwianRpIjoiR1JhaEl0WG5jdzh1WDRrSiJ9.OCBCt77v5G5Hv2n3VZL2yrwOlb4nXn2506EHOOnsObk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"4\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Players Follow",
+			"description": "",
+			"item": [
+				{
+					"name": "Follow",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/players/follow",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjcsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5MjkwNjE5LCJleHAiOjE1MDkyOTQyMTksIm5iZiI6MTUwOTI5MDYxOSwianRpIjoieXBqMGFjNUZoV2RLYVZIYiJ9.TE0b76mPq8Hcu26v4QG2Zqa1OmEbtQCnzn_Dh-cYVyg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"follower_id\": \"7\",\n\t\"following_id\": \"5\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "unFollow",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/players/unfollow",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5MjkwNzAxLCJleHAiOjE1MDkyOTQzMDEsIm5iZiI6MTUwOTI5MDcwMSwianRpIjoiUlJueDBQMktvaFpNc2NycSJ9.7bf9S5Ds03WTcZhvfJ1Z3qpMDnYOEz02exkHvDBDwAo",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"follower_id\": \"5\",\n\t\"following_id\": \"6\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Following",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/players/following",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5MjkwNzAxLCJleHAiOjE1MDkyOTQzMDEsIm5iZiI6MTUwOTI5MDcwMSwianRpIjoiUlJueDBQMktvaFpNc2NycSJ9.7bf9S5Ds03WTcZhvfJ1Z3qpMDnYOEz02exkHvDBDwAo",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"follower_id\": \"5\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Followers",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/players/followers",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTA5MjkyNjM1LCJleHAiOjE1MDkyOTYyMzUsIm5iZiI6MTUwOTI5MjYzNSwianRpIjoiRWdkc0xaSndkZmdjRkVNZyJ9.BjjOYqIRZHjTLcSJaibvHp4vlGV70UKtk1OEBeSmLfk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"following_id\": \"5\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feed Reports",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Report Types",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/reports/getReports",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEwNzUxMzU3LCJleHAiOjE1MTIyNjMzNTcsIm5iZiI6MTUxMDc1MTM1NywianRpIjoiWmNLeDBzcVQySWdYVDBmaiJ9.YOeODh191z7EEmeehE8ptnYN6-ARpdpurD97gUfVLA8",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Report A General Feed",
+					"request": {
+						"url": "http://151.236.222.252/hub/public/api/reports/reportFeed",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly8xNTEuMjM2LjIyMi4yNTIvaHViL3B1YmxpYy9hcGkvYXV0aGVudGljYXRlIiwiaWF0IjoxNTEwNzUxODE1LCJleHAiOjE1MTIyNjM4MTUsIm5iZiI6MTUxMDc1MTgxNSwianRpIjoiYm8yVmJHOEhwVVhVTTVHRCJ9.MpPJ8sWaq241ulKiOT6wIuOqG7Ol3QrMeVEOxQEjdUY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"feed_id\": 14,\n\t\"report_id\": 8\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
